@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, paper, scissors</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<div class="mainwrap">
+    <div class="gap">
+        <h3>How many rounds?</h3>
+        <form id="radioform">
+        <div class="row radiobuttons">
+            <div tabindex="0" class="radio_wrap">
+                <input required class="radio" type="radio" name="rounds" id="five" value="5">
+                <label for="five">5</label>
+            </div>
+            <div tabindex="0" class="radio_wrap">
+                <input class="radio" type="radio" name="rounds" id="ten" value="10">
+                <label for="ten">10</label>
+            </div>
+            <div tabindex="0" class="radio_wrap">    
+                <input class="radio" type="radio" name="rounds" id="fifteen" value="15">
+                <label for="fifteen">15</label>
+            </div>
+            <div tabindex="0" class="radio_wrap">
+                <input class="radio" type="radio" name="rounds" id="twenty" value="20">
+                <label for="twenty">20</label>
+            </div>
+        </div>
+         </form>
+    </div>
+
+    <div class="row mid">
+        <div class="vs"><img id="usericon" src="./assets/img/person.png" alt="">
+            <p class="which-one-user"> </p>
+        </div>
+
+    <div class="result-vs">
+        <div class="user-choice"></div>
+        <div class="numeric-result">
+            <p class="user-count">0</p>
+             : 
+            <p class="comp-count">0</p></div>
+        <div class="comp-choice"></div>
+    </div>
+    <div class="vs"><img id="compicon" src="./assets/img/robotic.png" alt="">
+        <p class="which-one-comp"> </p>
+    </div>
+    </div>
+    <!-- <button onclick="letsPlay(); return false">Submit</button> -->
+    <div class="output-result-text"></div>
+<div class="row fake-buttons">
+    <div data-value="rock" id="rock" class="play-icon"><img src="./assets/img/rock.png"></div>
+    <div data-value="paper" id="paper" class="play-icon"><img src="./assets/img/paper.png"></div>
+    <div data-value="scissors" id="scissors" class="play-icon"><img src="./assets/img/scissors.png"></div>
+</div>
+<button id="reset" onclick="window.location.reload()">Reset</button>
+<footer>
+    <hr>
+    <a target="_blank" href="https://icons8.com/icon/41390/robotic">Robotic</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+    <a target="_blank" href="https://icons8.com/icon/35847/teenager-male">Teenager Male</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a><br>
+    <a href="https://www.flaticon.com/free-icons/rock-paper-scissors" title="rock-paper-scissors icons">Rock-paper-scissors icon</a>
+</footer>
+</div>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
